@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*nav Icon*/
+.nav-bar .logo {
+    text-align: center;
+}
+
+.icon{
+    text-align: right;
+    border-right: 1px solid #343537;
+    display: flex;
+}
+
+/*nav Item*/
+
+.nav-item {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.nav-bar {
+    background-color: #0d0d11;
+    width: 100%;
+
+}
+.navbar {
+    background-color: #0e0f12;
+    border-top: 1px solid #343537;
+}
+.collapse .navbar-nav .nav-item .nav-link {
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*drop down list*/
+.navbar-toggler {
+    background: white;
+}
+
+
+
+.nav-list {
+    justify-content: center;
+}
+
+/*nav Icon*/
+.fa-linkedin-in {
+    color: white;
+}
+
+.fa-twitter{
+    color: #4397ff;
+}
+
+/*nav Languge*/
+.ar {
+    color: white;
+    text-decoration: none;
+}
+.lang {
+    padding: 0 4px;
+}
+.languge {
+    border-left: 1px solid #343537 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+/*Header List*/
+.list {
+    justify-content: center;
+    display: flex;
+}
+.line {
+    height: 13px;
+    display: flex;
+    width: 1px;
+    background-color: white;
+}
+.carousel-inner{
+    height: 450px;
+}
+
+/*Slider background*/
+.slide {
+    
+}
+
+.slide-background {
+    background-color: rgba(11, 64, 209, 88%);
+    height: 400px;
+    position: relative;
+}
+.slide-img {
+    position: absolute;
+}
+
+/*Slider Icon*/
+.icon-slider {
+    font-size: 70px;
+
+}
+
+/*Slider size text*/
+
+.carousel-caption h5 {
+    font-size: 40px;
+
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+.item {
+    width:62%;
+    margin: auto;
+}
+
+@media all and (max-width: 780px) {
+    .icon,.languge {
+      border-left: none;
+      border-right: none;
+    }
+    .slide-background {
+        background-color: rgba(11, 64, 209, 88%);
+        height: 200px;
+        position: relative;
+    }
+    .icon-slider {
+        font-size: 30px;
+    }
+    .slide-img {
+        position: absolute;
+        }
+        .slide {
+            height: 200px;
+        }
+        .item {
+            position:fixed;
+            width: 100%;
+            
+        }
+        .carousel-caption h5 {
+            font-size: 20px;
+        
+        }
+        
+        .carousel-caption p {
+            font-size: 10px;
+            padding-top: 10px;
+        }
+        .carousel-inner{
+            height: 220px;
+        }
+        .d-none {
+            display: inline-block!important;
+        }
+  }
