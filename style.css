@@ -8,12 +8,17 @@ body {
 /*nav Icon*/
 .nav-bar .logo {
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 .icon{
     text-align: right;
     border-right: 1px solid #343537;
     display: flex;
+    margin: auto;
+    padding-left: 35px;
+    justify-content: center;
 }
 
 /*nav Item*/
@@ -28,12 +33,11 @@ body {
 .nav-bar {
     background-color: #0d0d11;
     width: 100%;
-    text-align: center;
 
 }
 .navbar {
     background-color: #0e0f12;
-    
+    text-align: center;      
     display: inline-block;
 }
 .collapse .navbar-nav .nav-item .nav-link {
@@ -45,6 +49,11 @@ body {
 /*drop down list*/
 .navbar-toggler {
     background: white;
+    
+}
+.bg-dark {
+    background: none!important;
+    float: right;
 }
 
 
@@ -52,6 +61,8 @@ body {
 .nav-list {
     justify-content: center;
     border-top: 1px solid #343537;
+    margin: auto;
+    width: fit-content;
 }
 
 /*nav Icon*/
@@ -77,6 +88,8 @@ body {
     display: flex;
     align-items: center;
     padding: 9px;
+    margin: auto;
+    justify-content: center;
 }
 
 /*Header List*/
@@ -100,6 +113,13 @@ body {
 .slide-img {
     position: absolute;
 }
+.slide img {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 1rem;
+}
 
 /*Slider Icon*/
 .icon-slider {
@@ -113,6 +133,7 @@ body {
     border-radius: 10px;
     opacity: 0.2;
     transition: opacity .2s ease;
+    background-color: black;
 }
 .carousel-indicators .active {
     background-color: blue;
@@ -121,173 +142,131 @@ body {
 /*Slider size text*/
 
 .carousel-caption h5 {
-    font-size: 40px;
+    font-size: 55px;
 
 }
 
 .carousel-caption {
     position:initial;
+    text-align: center;
+    padding: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .carousel-caption p {
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 30px;
+    padding-top: 30px;
 }
 
 
 .item {
-    width:100%;
+    background: rgba(26, 29, 243, 0.678);;
+    position: absolute;
+    height: inherit;
+    max-height: 350px;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
-.bg-dark {
-    display: none;
-    
-}
+
 
 .navb {
     background: transparent;
     border: none;
+    font-size: 25px;
 }
 .carousel-item {
-    background-color:rgba(26, 29, 243, 0.678); ;
     text-align: center;
 }
-.d-none {
 
-    padding: 7%;
+
+@media all and (max-width:991.98px){
+    .nav-list
+    {
+        width: 100%;}
+
+        .icon {
+            border: none;
+        }
+        .languge {
+            border: none;
+        }
 }
 
-@media all and (max-width: 780px) {
-    .icon,.languge {
-      border-left: none;
-      border-right: none;
-      display: inline;
-    }
-
-    .icon-slider {
-        font-size: 30px;
-    }
-    .slide-img {
-        position: absolute;
-        }
-
-        .item {
-            width: 100%;
-            
-        }
-        .carousel-caption h5 {
-            font-size: 15px;
-        
-        }
-        
-        .carousel-caption p {
-            font-size: 10px;
-            
-        }
-        .carousel-inner{
-            height: 220px;
-        }
-        .d-none {
-            display: inline-block!important;
-        }
-        .bg-dark {
-            border: none;
-            float: right;
-            background: transparent!important;
-        }
-        
-        .nav-bar {
-            display: inline-block;
-            width: 100%;
-        }
-         .logo img {
-            width: 162px;
-            height: 53px;
-        }
-        .logo {
-            display: inline-block;
-        }
-        .navbar {
-            border:none;
-            display: inline-block;
-            padding: 8px;
-        } 
-        .nav-bar .logo {
-            float: left;
-        }
-        .nav-list {
-            text-align: center;
-            display: inline-block;
-            width: 100%;
-            padding-top: 10px;
-        }
-        .languge span {
-            display: inline-block;
-        }
-        .icon a {
-            padding:0 10px;
-            margin: 0;
-        }
-        .carousel-indicators {
-            padding: 5px;
-        }
-  }
-  @media (min-width: 576px) and (max-width: 992px)
-  
-  { 
+@media all and (max-width:442px){
     .bg-dark {
-        border: none;
-        float: right;
-        background: transparent!important;
+        float: none;
     }
-    .navbar {
-        border:none;
-        display: inline-block;
-        padding: 8px;
-    } 
-    .icon,.languge {
-        border-left: none;
-        border-right: none;
-        display: inline;
-      }
-      .languge span {
-        display: inline-block;
-    }
-    .icon a {
-        padding:0 10px;
-        margin: 0;
-    }
-    .nav-list {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
-        padding-top: 10px;
-    }
-
-    .logo img {
-        width: 170px;
-        height: 60px;
-    }
-    .nav-bar .logo {
-        float: left;
-        padding: 0;
-        margin: 0;
-    }
-    .navb {
-        padding: 7px;
-        font-size: 20px;
-    }
-    .carousel-caption h5 {
-        font-size: 20px;
-    
-    }
-    
-    .carousel-caption p {
-        font-size: 16px;
+        .carousel-caption {
+            padding: 0;
         
     }
 
-    .carousel-inner {
-        height: 260px;
+}
+@media (min-width: 20px) and (max-width: 575.98px) { 
+    
+    
+    .d-md-block h5{
+        font-size: 30px ;
+     } 
+    
+
+    .d-md-block p {
+        font-size: 22px;
     }
-   }
+
+    .item {
+        height: fit-content;
+    }
+    .carousel-caption {
+        padding: 0;
+    
+}
+ }
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    
+    .d-md-block h5{
+        font-size: 35px ;
+     } 
+    
+
+    .d-md-block p {
+        font-size: 28px;
+    }
+    .item {
+        height: fit-content;
+    }
+    .carousel-caption {
+        padding-left: 40px;
+        padding-right: 40px;
+
+    
+}
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px){ 
+    
+    
+    .d-md-block h5{
+        font-size: 45px ;
+     } 
+    
+
+    .d-md-block p {
+        font-size: 38px;
+    }
+    .item {
+        height: fit-content;
+    }
+    .carousel-caption {
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    
+}
+ }
+
+
