@@ -4,7 +4,7 @@ body {
 }
 /*nav Icon*/
 .nav-bar .logo {
-    text-align: center;
+    display: inline-block;
 }
 
 .icon{
@@ -19,15 +19,19 @@ body {
     padding-left: 45px;
     padding-right: 45px;
 }
+.navbar-expand-lg {
+    width: 100%;
+}
 .nav-bar {
     background-color: #0d0d11;
     width: 100%;
+    text-align: center;
 
 }
 .navbar {
     background-color: #0e0f12;
     
-    display: block;
+    display: inline-block;
 }
 .collapse .navbar-nav .nav-item .nav-link {
     color: white ;
@@ -89,11 +93,7 @@ body {
 
 /*Slider background*/
 
-.slide-background {
-    background-color: rgba(11, 64, 209, 88%);
-    height: 400px;
-    position: relative;
-}
+
 .slide-img {
     position: absolute;
 }
@@ -103,12 +103,27 @@ body {
     font-size: 70px;
 
 }
+.carousel-indicators li {
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.2;
+    transition: opacity .2s ease;
+}
+.carousel-indicators .active {
+    background-color: blue;
+}
 
 /*Slider size text*/
 
 .carousel-caption h5 {
     font-size: 40px;
 
+}
+
+.carousel-caption {
+    position:initial;
 }
 
 .carousel-caption p {
@@ -118,7 +133,7 @@ body {
 
 
 .item {
-    width:62%;
+    width:100%;
     margin: auto;
 }
 .bg-dark {
@@ -130,6 +145,14 @@ body {
     background: transparent;
     border: none;
 }
+.carousel-item {
+    background-color:rgba(26, 29, 243, 0.678); ;
+    text-align: center;
+}
+.d-none {
+
+    padding: 7%;
+}
 
 @media all and (max-width: 780px) {
     .icon,.languge {
@@ -137,33 +160,26 @@ body {
       border-right: none;
       display: inline;
     }
-    .slide-background {
-        background-color: rgba(11, 64, 209, 88%);
-        height: 200px;
-        position: relative;
-    }
+
     .icon-slider {
         font-size: 30px;
     }
     .slide-img {
         position: absolute;
         }
-        .slide {
-            height: 200px;
-        }
+
         .item {
-            position:fixed;
             width: 100%;
             
         }
         .carousel-caption h5 {
-            font-size: 20px;
+            font-size: 15px;
         
         }
         
         .carousel-caption p {
             font-size: 10px;
-            padding-top: 10px;
+            
         }
         .carousel-inner{
             height: 220px;
@@ -192,12 +208,15 @@ body {
             border:none;
             display: inline-block;
             padding: 8px;
-
         } 
+        .nav-bar .logo {
+            float: left;
+        }
         .nav-list {
             text-align: center;
             display: inline-block;
             width: 100%;
+            padding-top: 10px;
         }
         .languge span {
             display: inline-block;
@@ -206,4 +225,66 @@ body {
             padding:0 10px;
             margin: 0;
         }
+        .carousel-indicators {
+            padding: 5px;
+        }
   }
+  @media (min-width: 576px) and (max-width: 992px)
+  
+  { 
+    .bg-dark {
+        border: none;
+        float: right;
+        background: transparent!important;
+    }
+    .navbar {
+        border:none;
+        display: inline-block;
+        padding: 8px;
+    } 
+    .icon,.languge {
+        border-left: none;
+        border-right: none;
+        display: inline;
+      }
+      .languge span {
+        display: inline-block;
+    }
+    .icon a {
+        padding:0 10px;
+        margin: 0;
+    }
+    .nav-list {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .logo img {
+        width: 170px;
+        height: 60px;
+    }
+    .nav-bar .logo {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    .navb {
+        padding: 7px;
+        font-size: 20px;
+    }
+    .carousel-caption h5 {
+        font-size: 20px;
+    
+    }
+    
+    .carousel-caption p {
+        font-size: 16px;
+        
+    }
+
+    .carousel-inner {
+        height: 260px;
+    }
+   }

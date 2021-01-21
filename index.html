@@ -21,7 +21,7 @@
     <div class="nav-bar">
 
       
-      <nav class="navbar navbar-expand-lg navbar-dark container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="logo">
           <img src="img/logo.png">
         </div>
@@ -63,8 +63,8 @@
     </div>
  <!--Slider-->
 
- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-   
+ <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
+  
   <div class="carousel-inner">
 <!--backgound slider-->
     <div class="slide">
@@ -103,16 +103,11 @@
     </div>
   </div>
 <!--Icon Slider-->
-  <!--Icon Left-->
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="bi bi-arrow-left-circle icon-slider" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <!--Icon Right-->
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="bi bi-arrow-right-circle icon-slider icon-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<ol class="carousel-indicators">
+  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+  <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+</ol>
 </div>   
   </div>
 
