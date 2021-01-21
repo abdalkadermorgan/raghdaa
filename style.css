@@ -26,7 +26,8 @@ body {
 }
 .navbar {
     background-color: #0e0f12;
-    border-top: 1px solid #343537;
+    
+    display: block;
 }
 .collapse .navbar-nav .nav-item .nav-link {
     color: white ;
@@ -43,6 +44,7 @@ body {
 
 .nav-list {
     justify-content: center;
+    border-top: 1px solid #343537;
 }
 
 /*nav Icon*/
@@ -86,9 +88,6 @@ body {
 }
 
 /*Slider background*/
-.slide {
-    
-}
 
 .slide-background {
     background-color: rgba(11, 64, 209, 88%);
@@ -122,11 +121,21 @@ body {
     width:62%;
     margin: auto;
 }
+.bg-dark {
+    display: none;
+    
+}
+
+.navb {
+    background: transparent;
+    border: none;
+}
 
 @media all and (max-width: 780px) {
     .icon,.languge {
       border-left: none;
       border-right: none;
+      display: inline;
     }
     .slide-background {
         background-color: rgba(11, 64, 209, 88%);
@@ -161,5 +170,40 @@ body {
         }
         .d-none {
             display: inline-block!important;
+        }
+        .bg-dark {
+            border: none;
+            float: right;
+            background: transparent!important;
+        }
+        
+        .nav-bar {
+            display: inline-block;
+            width: 100%;
+        }
+         .logo img {
+            width: 162px;
+            height: 53px;
+        }
+        .logo {
+            display: inline-block;
+        }
+        .navbar {
+            border:none;
+            display: inline-block;
+            padding: 8px;
+
+        } 
+        .nav-list {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
+        .languge span {
+            display: inline-block;
+        }
+        .icon a {
+            padding:0 10px;
+            margin: 0;
         }
   }

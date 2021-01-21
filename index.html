@@ -19,21 +19,24 @@
 
 <!--nav bar-->
     <div class="nav-bar">
-<!--Logo-->
-      <div class="logo">
-        <img src="img/logo.png">
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-light container">
-<!--Icon-->        
-        <div class="col-1 icon collapse navbar-collapse" id="navbarNavDropdown">
-          <a class="navbar-brand" href="#"><i class="fa fa-linkedin-in"></i></a>
-          <a class="navbar-brand" href="#"><i class="fa fa-twitter"></i></a>
+
+      
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="logo">
+          <img src="img/logo.png">
         </div>
-<!--button responsive-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-dark bg-dark" style="
+        border: none;
+        ">
+          <button class="navb ar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
         <div class="collapse navbar-collapse nav-list" id="navbarNavDropdown">
+          <div class="col-1 icon collapse navbar-collapse" id="navbarNavDropdown">
+            <a class="navbar-brand" href="#"><i class="fa fa-linkedin-in"></i></a>
+            <a class="navbar-brand" href="#"><i class="fa fa-twitter"></i></a>
+          </div>
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
@@ -49,16 +52,14 @@
             </li>
   
           </ul>
+          <div class="col-1 languge collapse navbar-collapse" id="navbarNavDropdown">
+            <a href="#" class="lang"><span class="en">EN</span></a>
+            <span class="line"></span>
+            <a href="#" class="lang"><span class="ar">AR</span></a>
+          </div>
         </div>
-<!--Languge-->
-        <div class="col-1 languge collapse navbar-collapse" id="navbarNavDropdown">
-          <a href="#" class="lang"><span class="en">EN</span></a>
-          <span class="line"></span>
-          <a href="#" class="lang"><span class="ar">AR</span></a>
-        </div>
+        
       </nav>
-
-
     </div>
  <!--Slider-->
 
